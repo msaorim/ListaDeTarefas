@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Lista de Tarefas a Fazer";
+}
+
+<h1 class="display-5"><strong>Tarefas a Fazer</strong></h1>
+<a type="button" class="btn btn-primary" role="button" asp-controller="Tarefas" asp-action="Criar">Criar Tarefa</a>
+
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Data</th>
+      <th scope="col">Concluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Tomar Café da Manhã</td>
+      <td>17/03/2022 7:00:00</td>
+      <td><input type="checkbox" checked></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Inicio de Trabalho</td>
+      <td>17/03/2022 8:00:00</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Almoçar</td>
+      <td>17/03/2022 12:00:00</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Final de Trabalho</td>
+      <td>17/03/2022 17:00:00</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Jantar</td>
+      <td>17/03/2022 20:00:00</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr class="table-dark">
+      <th scope="row"></th>
+      <td colspan="2" class="text-end">Total de Tarefas ------> </td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+
+
+

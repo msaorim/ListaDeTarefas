@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Criar Tarefa";
+}
+
+<h1 class="display-5"><strong>Criar uma Tarefa</strong></h1>
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="Descricao" class="form-label">Descrição da Tarefa</label>
+            <input type="text" class="form-control" id="descricao-tarefa">
+            
+        </div>
+        <div class="mb-2">
+            <label for="Hora" class="form-label">Hora</label>
+            <input type="text" class="form-control" id="hora-tarefa" value="" readonly>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar Tarefa</button>
+        <a type="button" class="btn btn-danger" asp-controller="Home" asp-action="TarefasAFazer">Cancelar </a>
+    </form>
+</div>
